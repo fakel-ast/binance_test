@@ -13,7 +13,7 @@ class BinancePropertiesEnum(Enum):
 
 
 async def listen_currency_change():
-    ws_url = "wss://stream.binance.com:9443/ws/btcusdt@ticker_1h"
+    ws_url = "wss://stream.binance.com:9443/ws/xrpusdt@ticker_1h"
     async with websockets.connect(ws_url) as websocket:
         while True:
             try:
